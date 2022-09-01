@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'MyHomePage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -11,19 +12,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'IndonesiaKu ',
+      title: 'Car Market Place',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+          scaffoldBackgroundColor: const Color.fromRGBO(38, 33, 54,1),
       ),
       home: const MyHomePage(),
     );
-  }
-}
-
-class MyHomePage extends StatelessWidget {
-  const MyHomePage({Key? key}) : super(key: key);
-
-  Widget build(BuildContext context){
-    return Scaffold();
   }
 }
